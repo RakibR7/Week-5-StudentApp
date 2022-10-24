@@ -1,4 +1,4 @@
-package ie.atu;
+package ie.atu.StudentApp;
 import java.util.Scanner;
 
 public class StudentApp
@@ -13,17 +13,22 @@ public class StudentApp
     {
         System.out.println("Please enter your name: ");
         Scanner inputs = new Scanner(System.in);
-        String name_1 = inputs.nextLine();
+        String name = inputs.nextLine();
+        Student StudentName = new Student();
+        StudentName.getName();
+
 
         System.out.println("Please enter your email: ");
-        //Scanner input = new Scanner(System.in);
-        String email_1 = inputs.nextLine();
+        String email = inputs.nextLine();
+        Student StudentEmail = new Student();
+        StudentEmail.getEmail();
 
         System.out.println("Please enter your course: ");
-        //Scanner inputs = new Scanner(System.in);
-        String course_1 = inputs.nextLine();
+        String course = inputs.nextLine();
+        Student StudentCourse = new Student();
+        StudentCourse.getCourse();
 
-        String info = name_1 + email_1 + course_1;
+        String info = name + email + course;
         System.out.println("Information about student:  " + info);
     }
 }
