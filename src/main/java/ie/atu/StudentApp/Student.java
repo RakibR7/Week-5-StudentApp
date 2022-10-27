@@ -6,6 +6,19 @@ public class Student
     private String email;
     private String course;
 
+    public Student(){
+        this.name = "  ";
+        this.email = "  ";
+        this.course = "  ";
+    }
+
+    public Student(String name2, String email2, String course2) {
+        this.name = name2;
+        this.email = email2;
+        this.course = course2;
+    }
+
+
     public String getName() {
         return name;
     }
@@ -30,3 +43,4 @@ public class Student
         this.course = course;
     }
 }
+
