@@ -16,42 +16,71 @@ public class StudentApp
         Scanner inputs = new Scanner(System.in);
         String name = inputs.nextLine();
         Student StudentName = new Student();
+        StudentName.setName(name);
         System.out.println("You entered: " + name);
-        StudentName.getName();
 
+        Student StudentEmail = new Student();
         System.out.println("Please enter your email: ");
         String email = inputs.nextLine();
-        Student StudentEmail = new Student();
+        StudentEmail.setName(email);
         System.out.println("You entered: " + email);
-        StudentEmail.getEmail();
 
+        Student StudentCourse = new Student();
         System.out.println("Please enter your course: ");
         String course = inputs.nextLine();
-        Student StudentCourse = new Student();
+        StudentCourse.setCourse(course);
         System.out.println("You entered: " + course);
-        StudentCourse.getCourse();
 
-        //String info = name + email + course;
-        //System.out.println("Information about student:  " + info);
+
 
         //second instance of student information
         System.out.println("Please enter your name: ");
         String name2 = inputs.nextLine();
         Student StudentName2 = new Student();
-        System.out.println("You entered: " + name);
-        StudentName.getName();
+        StudentName2.setName(name);
+        System.out.println("You entered: " + name2);
 
         System.out.println("Please enter your email: ");
         String email2 = inputs.nextLine();
         Student StudentEmail2 = new Student();
-        System.out.println("You entered: " + email);
-        StudentEmail.getEmail();
+        StudentEmail2.getEmail();
+        System.out.println("You entered: " + email2);
 
         System.out.println("Please enter your course: ");
         String course2 = inputs.nextLine();
         Student StudentCourse2 = new Student();
-        System.out.println("You entered: " + course);
-        StudentCourse.getCourse();
+        StudentCourse2.getCourse();
+        System.out.println("You entered: " + course2);
 
+        //third instance of student information
+        System.out.println("Please enter your name: ");
+        String name3 = inputs.nextLine();
+        Student StudentName3 = new Student();
+        System.out.println("You entered: " + name3);
+        StudentName3.getName();
+
+        System.out.println("Please enter your email: ");
+        String email3 = inputs.nextLine();
+        Student StudentEmail3 = new Student();
+        System.out.println("You entered: " + email3);
+        StudentEmail3.getEmail();
+
+        System.out.println("Please enter your course: ");
+        String course3 = inputs.nextLine();
+        Student StudentCourse3 = new Student();
+        System.out.println("You entered: " + course3);
+        StudentCourse3.getCourse();
+
+        //all information
+        Student info = new Student(name, email, course);
+        System.out.println("student name:  " + name);
+        System.out.println("student email:  " + email);
+        System.out.println("student course:  " + course);
+        System.out.println("student name:  " + name2);
+        System.out.println("student email:  " + email2);
+        System.out.println("student course:  " + course2);
+        System.out.println("student name:  " + name3);
+        System.out.println("student email:  " + email3);
+        System.out.println("student course:  " + course3);
     }
 }

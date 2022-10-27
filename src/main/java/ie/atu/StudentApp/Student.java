@@ -7,17 +7,17 @@ public class Student
     private String course;
 
     public Student(){
-        this.name = "  ";
-        this.email = "  ";
-        this.course = "  ";
+           this.name = "";
+           this.email = "";
+           this.course = "";
     }
 
-    public Student(String name2, String email2, String course2) {
-        this.name = name2;
-        this.email = email2;
-        this.course = course2;
-    }
+    public Student(String name, String email, String course) {
+        this.name = name;
+        this.email = email;
+        this.course = course;
 
+    }
 
     public String getName() {
         return name;
@@ -43,4 +43,6 @@ public class Student
         this.course = course;
     }
 }
+
+
 
