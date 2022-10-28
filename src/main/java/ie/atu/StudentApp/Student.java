@@ -19,7 +19,7 @@ public class Student
 
     }
 
-    public String getName() {
+    public String SetName() {
         return name;
     }
 
@@ -27,7 +27,7 @@ public class Student
         this.name = name;
     }
 
-    public String getEmail() {
+    public String SetEmail() {
         return email;
     }
 
@@ -35,7 +35,7 @@ public class Student
         this.email = email;
     }
 
-    public String getCourse() {
+    public String SetCourse() {
         return course;
     }
 
